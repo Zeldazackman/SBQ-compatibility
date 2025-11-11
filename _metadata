@@ -1,0 +1,27 @@
+{
+	"version" : "4.0.1",
+	"tags" : "",
+	"author" : "Zygan, LokiVulpix",
+	"description" : "Here at the Starbecue, everything's edible, even your friends!",
+	"link" : "https://www.patreon.com/LokiVulpix",
+	"name" : "Starbecue Compatibility Patches",
+	"friendlyName" : "Starbecue Compatibility Patches",
+	"priority" : 9999,
+	"includes" : [
+		"Umbreon Race Mod", "Avali", "novalirace", "Gnolls", "lucario", "The Crylik Race [BETA]", "The Crylik Race",
+		"Lyceen  Race", "Lyceen Race", "ssvm", "Draconis Race(Humanoid Dragon Race)", "draconisFullDragons", "Familiars",
+		"Felins", "Neki", "Vulpes Race", "Starbound Synth Mod", "The SpaceKidds!", "Sergal Race Mod Langy's Branch",
+		"Attarran", "Lycanroc Race", "lastree", "kazdra", "GalaxyFoxes", "GalaxyFoxesEX", "Futara's Dragon Race",
+		"EeveeModReMIX", "Braixen Race Fired Up", "Braixen Race", "argonian", "Latex Race", "Zoroark Race (WIP)",
+		"Hisuian Zoroark Race (WIP)", "Zoroark Race","Hisuian Zoroark Race", "sylveonoid", "Bunnykin",
+		"Yharian Race mod", "Mechineki", "Saurian Race", "WIP: The Viera of Ivalice", "The Viera of Ivalice",
+		"everisracemod", "Boss Monsters / Dreemurrers", "Glaceon Race", "Glaceon Race V2.1",
+		"Espeon Race!", "JolteonRaceMod", "Twilit Wolves", "Squamaeft Race", "Some Random Monster Race-(Redone)",
+		"Some Random Monster Race", "Ori  Spirit Tree Race", "Ori Spirit Tree Race", "The Orcana", "The Vesperian",
+		"Crewmate", "Crewmate Race", "Crewkin", "Whobound", "Gardevan", "Galactic Goblins (RECODE!", "Galactic Goblins (RECODE!)",
+		"Galactic Goblins", "Deerkin", "Mauskin", "shoggothracemod", "Plasmoid", "[DB:X2] Majin Race\n", "[DB:X2] Majin Race",
+		"Inkbound", "saiyan", "lamia", "Space Skunks!", "wr_pokemon", "Renamon Race",
+		"FrackinUniverse", "Frackin' Universe", // have to include FU to make sure it loads after so it doesn't kill our goddam fireplace as its terrestrial worlds patch doesn't give a shit about other mods adding shit to garden planets
+		"ssvm", "Starbound Simple Vore Mod"
+	]
+}
