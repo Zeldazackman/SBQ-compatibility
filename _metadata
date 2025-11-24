@@ -20,7 +20,7 @@
 		"Some Random Monster Race", "Ori  Spirit Tree Race", "Ori Spirit Tree Race", "The Orcana", "The Vesperian",
 		"Crewmate", "Crewmate Race", "Crewkin", "Whobound", "Gardevan", "Galactic Goblins (RECODE!", "Galactic Goblins (RECODE!)",
 		"Galactic Goblins", "Deerkin", "Mauskin", "shoggothracemod", "Plasmoid", "[DB:X2] Majin Race\n", "[DB:X2] Majin Race",
-		"Inkbound", "saiyan", "lamia", "Space Skunks!", "wr_pokemon", "Renamon Race",
+		"Inkbound", "saiyan", "lamia", "Space Skunks!", "wr_pokemon", "Renamon Race", "Mr. (Ant) Tenna's Starbound Mod",
 		"FrackinUniverse", "Frackin' Universe", // have to include FU to make sure it loads after so it doesn't kill our goddam fireplace as its terrestrial worlds patch doesn't give a shit about other mods adding shit to garden planets
 		"ssvm", "Starbound Simple Vore Mod"
 	]
