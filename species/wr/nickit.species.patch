@@ -53,7 +53,7 @@
 				"tail" : {
 					"default": {
 						"includes": [
-							"/humanoid.config:sbqConfig.modules.tail.nickit"
+							"/humanoid/wr/quadruped/quadruped.config:sbqConfig.modules.tail.nickit"
 						]
 					}
 				}
@@ -68,32 +68,6 @@
 	},
 
 	"sbqPartImages": {
-		"sbq/noLegs/malebody.png" : {
-			"sourceImage" : "malebody.png",
-			"processingDirectives" : "?addmask=/humanoid/any/sbqImageMasks/noLegs_male.png;0;0;",
-			"patches" : ["/humanoid/any/sbqImageMasks/noLegs_patch.lua"]
-		},
-		"sbq/noLegs/femalebody.png" : {
-			"sourceImage" : "femalebody.png",
-			"processingDirectives" : "?addmask=/humanoid/any/sbqImageMasks/noLegs_female.png;0;0;",
-			"patches" : ["/humanoid/any/sbqImageMasks/noLegs_patch.lua"]
-		},
-		"sbq/malebody.png" : {
-			"sourceImage" : "malebody.png"
-		},
-		"sbq/femalebody.png" : {
-			"sourceImage" : "femalebody.png"
-		},
-		"sbq/fg/malebody.png" : {
-			"sourceImage" : "malebody.png",
-			"processingDirectives" : "?addmask=/humanoid/any/sbqImageMasks/legMask.png;0;0;"
-		},
-		"sbq/fg/femalebody.png" : {
-			"sourceImage" : "femalebody.png",
-			"processingDirectives" : "?addmask=/humanoid/any/sbqImageMasks/legMask.png;0;0;"
-		},
-
-
 		"sbq/naga/hips.png" : {
 			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_hips.png",
 			"remapDirectives": [
@@ -174,10 +148,33 @@
 		},
 
 		"sbq/nickit_tail.png" : {
-			"sourceImage" : "/humanoid/any/sbqModules/nickit_tail/nickit_tail.png"
+			"sourcePalette" : "/humanoid/any/sbqModules/nickit_tail/palette.config",
+			"sourceImage" : "/humanoid/any/sbqModules/nickit_tail/nickit_tail.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"secondary"
+				],
+				[
+					"secondary",
+					"secondary"
+				]
+			]
 		},
 		"sbq/infused/nickit_tail.png" : {
-			"sourceImage" : "/humanoid/any/sbqModules/nickit_tail/nickit_tail.png"
+			"sourcePalette" : "/humanoid/any/sbqModules/nickit_tail/palette.config",
+			"sourceImage" : "/humanoid/any/sbqModules/nickit_tail/nickit_tail.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"secondary"
+				]
+			]
+
 		},
 		"sbq/flareon_tail.png" : {
 			"sourcePalette" : "/species/wr/flareon.species:baseColorPalette",
@@ -235,6 +232,7 @@
 				]
 			]
 		},
+
 		"sbq/luxio_tail.png" : {
 			"sourcePalette" : "/species/wr/luxio.species:baseColorPalette",
 			"sourceImage" : "/humanoid/wr/luxio/tail.png",
@@ -242,10 +240,6 @@
 				[
 					"secondary",
 					"secondary"
-				],
-				[
-					"eyes",
-					"eyes"
 				]
 			]
 		},
@@ -256,37 +250,12 @@
 				[
 					"secondary",
 					"secondary"
-				],
-				[
-					"eyes",
-					"eyes"
 				]
 			]
 		},
 
-		"sbq/infused/bellyQuadruped.png": {
+		"sbq/bellyQuadruped.png": {
 			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
-			"processingDirectives": "?replace;00adba=bc1002", // this replaces the navel pixel, don't touch this
-			"remapDirectives": [
-				[
-					"primary",
-					"primary"
-				]
-			]
-		},
-		"sbq/infused/bellyQuadruped_noNavel.png": {
-			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
-			"processingDirectives": "?replace;00adba=eb3629", // this replaces the navel pixel, don't touch this
-			"remapDirectives": [
-				[
-					"primary",
-					"primary"
-				]
-			]
-		},
-
-		"sbq/belly.png": {
-			"sourceImage": "/humanoid/any/sbqModules/belly/default.png",
 			"processingDirectives": "?replace;00adba=bc1002", // this replaces the navel pixel, don't touch this
 			"remapDirectives": [
 				[
@@ -295,8 +264,28 @@
 				]
 			]
 		},
-		"sbq/belly_noNavel.png": {
-			"sourceImage": "/humanoid/any/sbqModules/belly/default.png",
+		"sbq/bellyQuadruped_noNavel.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
+			"processingDirectives": "?replace;00adba=eb3629", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/bellyQuadruped.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
+			"processingDirectives": "?replace;00adba=bc1002", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/bellyQuadruped_noNavel.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
 			"processingDirectives": "?replace;00adba=eb3629", // this replaces the navel pixel, don't touch this
 			"remapDirectives": [
 				[
@@ -357,7 +346,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"secondary"
 				]
 			]
 		},
@@ -375,7 +364,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"secondary"
 				]
 			]
 		},
@@ -439,7 +428,7 @@
 				],
 				[
 					"primary",
-					"tertiary"
+					"primary"
 				],
 				[
 					"flesh",
@@ -455,7 +444,7 @@
 				],
 				[
 					"primary",
-					"tertiary"
+					"primary"
 				],
 				[
 					"flesh",
@@ -505,11 +494,11 @@
 				],
 				[
 					"primary",
-					"tertiary"
+					"primary"
 				],
 				[
 					"flesh",
-					"tertiary"
+					"primary"
 				]
 			]
 		},
@@ -521,11 +510,11 @@
 				],
 				[
 					"primary",
-					"tertiary"
+					"primary"
 				],
 				[
 					"flesh",
-					"tertiary"
+					"primary"
 				]
 			]
 		}
