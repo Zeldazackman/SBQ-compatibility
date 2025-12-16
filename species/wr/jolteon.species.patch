@@ -3,8 +3,7 @@
 	"sbqTFAny" : true,
 	"sbqTenantData" : {
 		"colonyTagCriteria" : {
-			"unscorched" : 8,
-			"human" : 4
+			"electronic" : 8
 		},
 		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
 		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
@@ -23,15 +22,26 @@
 		"tenant" : {
 			"spawn": "npc", "species": "wr/jolteon", "type": "sbqVoreTenant", "overrides": {},
 			"orderFurniture" : [
-				{"name":"medievalfireplace", "count":1},
-				{"name":"frontierfurnace", "count":1},
-				{"name":"scorchedcitybed", "count":1},
-				{"name":"scorchedcitychestdrawersmall", "count":1},
-				{"name":"scorchedcitytv", "count":1},
-				{"name":"scorchedcitytable", "count":1},
-				{"name":"lavalamp1", "count":1, "parameters":{"color":"red"}},
-				{"name":"lavalamp1", "count":1, "parameters":{"color":"orange"}},
-				{"name":"lavalamp1", "count":1, "parameters":{"color":"yellow"}}
+				{"name":"tesla", "count":1},
+				{"name":"electricdoor", "count":1},
+				{"name":"basictv", "count":1},
+				{"name":"bunkerwires", "count":1},
+				{"name":"arcadegame", "count":1},
+				{"name":"arcadestarbound", "count":1},
+				{"name":"clubceilinglights", "count":1},
+				{"name":"clubceilinglightsgreen", "count":1},
+				{"name":"clubceilinglightsred", "count":1},
+				{"name":"clubceilinglightsyellow", "count":1},
+				{"name":"clubdecks", "count":1},
+				{"name":"clubspeaker", "count":1},
+				{"name":"arcadesign", "count":1},
+				{"name":"arcadeblue", "count":1},
+				{"name":"arcadedance", "count":1},
+				{"name":"arcadegreen", "count":1},
+				{"name":"arcadeorange", "count":1},
+				{"name":"arcadepurple", "count":1},
+				{"name":"arcadered", "count":1},
+				{"name":"arcadeyellow", "count":1}
 			]
 		},
 		"guardTenant" : [ // merges on top of the base tenant
@@ -64,7 +74,7 @@
 				],
 				[
 					"secondary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -77,7 +87,7 @@
 				],
 				[
 					"secondary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -90,7 +100,7 @@
 				],
 				[
 					"secondary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -103,7 +113,7 @@
 				],
 				[
 					"secondary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -116,7 +126,7 @@
 				],
 				[
 					"secondary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -129,7 +139,7 @@
 				],
 				[
 					"secondary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -144,7 +154,7 @@
 				],
 				[
 					"secondary",
-					"paws"
+					"tertiary"
 				]
 			]
 		},
@@ -158,30 +168,16 @@
 				],
 				[
 					"secondary",
-					"paws"
+					"secondary"
 				]
 			]
 
 		},
 		"sbq/flareon_tail.png" : {
-			"sourcePalette" : "/species/wr/flareon.species:baseColorPalette",
-			"sourceImage" : "/humanoid/wr/flareon/tail.png",
-			"remapDirectives": [
-				[
-					"secondary",
-					"secondary"
-				]
-			]
+			"sourceImage" : "/humanoid/wr/flareon/tail.png"
 		},
 		"sbq/infused/flareon_tail.png" : {
-			"sourcePalette" : "/species/wr/flareon.species:baseColorPalette",
-			"sourceImage" : "/humanoid/wr/flareon/tail.png",
-			"remapDirectives": [
-				[
-					"secondary",
-					"secondary"
-				]
-			]
+			"sourceImage" : "/humanoid/wr/flareon/tail.png"
 		},
 		"sbq/vaporeon_tail.png" : {
 			"sourcePalette" : "/species/wr/vaporeon.species:baseColorPalette",
@@ -197,7 +193,7 @@
 				],
 				[
 					"tertiary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -215,7 +211,7 @@
 				],
 				[
 					"tertiary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -247,7 +243,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -257,7 +253,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -267,7 +263,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -277,7 +273,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -287,7 +283,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -297,7 +293,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -324,7 +320,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -342,7 +338,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -378,7 +374,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				],
 				[
 					"primary_180",
@@ -395,7 +391,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				],
 				[
 					"primary_180",
@@ -444,7 +440,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				],
 				[
 					"primary_180",
@@ -452,7 +448,7 @@
 				],
 				[
 					"flesh",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
@@ -461,7 +457,7 @@
 			"remapDirectives": [
 				[
 					"primary",
-					"tertiary"
+					"belly"
 				],
 				[
 					"primary_180",
@@ -469,7 +465,7 @@
 				],
 				[
 					"flesh",
-					"tertiary"
+					"belly"
 				]
 			]
 		},
