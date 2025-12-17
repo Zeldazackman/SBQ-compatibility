@@ -4,7 +4,7 @@
 	"sbqTenantData" : {
 		"colonyTagCriteria" : {
 			"hoard" : 8,
-			"valuable" : 32
+			"valuable" : 16
 		},
 		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
 		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
