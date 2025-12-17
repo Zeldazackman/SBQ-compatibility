@@ -1,0 +1,515 @@
+{
+	"sbqCompatible" : true,
+	"sbqTFAny" : true,
+	"sbqTenantData" : {
+		"colonyTagCriteria" : {
+			"hoard" : 8,
+			"valuable" : 8,
+			"foundry" : 8
+		},
+		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
+		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
+		// it is good to define them anyway even if they might not be obtainable
+			{"combat":8},
+			{"combat":8,"tier2":12},
+			{"combat":8,"tier3":12},
+			{"combat":8,"tier4":12},
+			{"combat":8,"tier5":12},
+			{"combat":8,"tier6":12},
+			{"combat":8,"tier7":12},
+			{"combat":8,"tier8":12},
+			{"combat":8,"tier9":12},
+			{"combat":8,"tier10":12}
+		],
+		"tenant" : {
+			"spawn": "npc", "species": "wr/dragon/fire", "type": "sbqVoreTenant", "overrides": {},
+			"orderFurniture" : [
+				{"name":"foundrybed", "count":1},
+				{"name":"magmalamp", "count":1},
+				{"name":"foundrylight", "count":1},
+				{"name":"lavatankcascade", "count":1},
+				{"name":"lavatanklarge", "count":1},
+				{"name":"lavatanksmall", "count":1},
+				{"name":"royalthrone", "count":1},
+				{"name":"diamonddisplay", "count":1},
+				{"name":"goldenegg", "count":1},
+				{"name":"goldenducky", "count":1},
+				{"name":"treasurechest", "count":1},
+				{"name":"barrelgoldfilled", "count":1},
+				{"name":"woodencrategoldfilled", "count":1}
+			]
+		},
+		"guardTenant" : [ // merges on top of the base tenant
+			{"level": 1, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 2, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 3, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 4, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 5, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 6, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 7, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 8, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 9, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}},
+			{"level": 10, "type": "sbqVoreFriendlyGuardTenant", "overrides": {}}
+		]
+	},
+
+	"sbqSettingsConfig": {
+		"defaultSettings": {"any":{
+			"navelVisible": true,
+			"nipplesVisible": true
+		}}
+	},
+
+	"sbqPartImages": {
+		"sbq/naga/hips.png" : {
+			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_hips.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/naga/hips.png" : {
+			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_hips.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/naga/belly.png" : {
+			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_belly.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/naga/belly.png" : {
+			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_belly.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/naga/end.png" : {
+			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_end.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/naga/end.png" : {
+			"sourceImage" : "/humanoid/any/sbqModules/naga/tail_end.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"tertiary"
+				]
+			]
+		},
+
+		"sbq/nickit_tail.png" : {
+			"sourcePalette" : "/humanoid/any/sbqModules/nickit_tail/palette.config",
+			"sourceImage" : "/humanoid/any/sbqModules/nickit_tail/nickit_tail.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"secondary"
+				],
+				[
+					"secondary",
+					"paws"
+				]
+			]
+		},
+		"sbq/infused/nickit_tail.png" : {
+			"sourcePalette" : "/humanoid/any/sbqModules/nickit_tail/palette.config",
+			"sourceImage" : "/humanoid/any/sbqModules/nickit_tail/nickit_tail.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"paws"
+				]
+			]
+
+		},
+		"sbq/flareon_tail.png" : {
+			"sourcePalette" : "/species/wr/flareon.species:baseColorPalette",
+			"sourceImage" : "/humanoid/wr/flareon/tail.png",
+			"remapDirectives": [
+				[
+					"secondary",
+					"secondary"
+				]
+			]
+		},
+		"sbq/infused/flareon_tail.png" : {
+			"sourcePalette" : "/species/wr/flareon.species:baseColorPalette",
+			"sourceImage" : "/humanoid/wr/flareon/tail.png",
+			"remapDirectives": [
+				[
+					"secondary",
+					"secondary"
+				]
+			]
+		},
+		"sbq/vaporeon_tail.png" : {
+			"sourcePalette" : "/species/wr/vaporeon.species:baseColorPalette",
+			"sourceImage" : "/humanoid/wr/vaporeon/tail.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"secondary"
+				],
+				[
+					"tertiary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/vaporeon_tail.png" : {
+			"sourcePalette" : "/species/wr/vaporeon.species:baseColorPalette",
+			"sourceImage" : "/humanoid/wr/vaporeon/tail.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"secondary",
+					"secondary"
+				],
+				[
+					"tertiary",
+					"tertiary"
+				]
+			]
+		},
+
+		"sbq/luxio_tail.png" : {
+			"sourcePalette" : "/species/wr/luxio.species:baseColorPalette",
+			"sourceImage" : "/humanoid/wr/luxio/tail.png",
+			"remapDirectives": [
+				[
+					"secondary",
+					"secondary"
+				]
+			]
+		},
+		"sbq/infused/luxio_tail.png" : {
+			"sourcePalette" : "/species/wr/luxio.species:baseColorPalette",
+			"sourceImage" : "/humanoid/wr/luxio/tail.png",
+			"remapDirectives": [
+				[
+					"secondary",
+					"secondary"
+				]
+			]
+		},
+
+		"sbq/bellyQuadruped.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
+			"processingDirectives": "?replace;00adba=bc1002", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/bellyQuadruped_noNavel.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
+			"processingDirectives": "?replace;00adba=eb3629", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/bellyQuadruped.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
+			"processingDirectives": "?replace;00adba=bc1002", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/bellyQuadruped_noNavel.png": {
+			"sourceImage": "/humanoid/wr/quadruped/belly/default.png",
+			"processingDirectives": "?replace;00adba=eb3629", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/belly.png": {
+			"sourceImage": "/humanoid/any/sbqModules/belly/default.png",
+			"processingDirectives": "?replace;00adba=bc1002", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/belly_noNavel.png": {
+			"sourceImage": "/humanoid/any/sbqModules/belly/default.png",
+			"processingDirectives": "?replace;00adba=eb3629", // this replaces the navel pixel, don't touch this
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/cock.png": {
+			"sourceImage": "/humanoid/any/sbqModules/cock/default.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"flesh"
+				]
+			]
+		},
+		"sbq/infused/cock.png": {
+			"sourceImage": "/humanoid/any/sbqModules/cock/default.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"primary"
+				]
+			]
+		},
+		"sbq/ballsFront.png": {
+			"sourceImage": "/humanoid/any/sbqModules/balls/default/front.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/ballsFront.png": {
+			"sourceImage": "/humanoid/any/sbqModules/balls/default/front.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"secondary"
+				]
+			]
+		},
+		"sbq/ballsBack.png": {
+			"sourceImage": "/humanoid/any/sbqModules/balls/default/back.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/ballsBack.png": {
+			"sourceImage": "/humanoid/any/sbqModules/balls/default/back.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"secondary"
+				]
+			]
+		},
+		"sbq/pussy.png": {
+			"sourceImage": "/humanoid/any/sbqModules/pussy/default.png",
+			"remapDirectives": [
+				[
+					"flesh",
+					"flesh"
+				]
+			]
+		},
+		"sbq/infused/pussy.png": {
+			"sourceImage": "/humanoid/any/sbqModules/pussy/default.png",
+			"remapDirectives": [
+				[
+					"flesh",
+					"primary"
+				]
+			]
+		},
+		"sbq/breastsFront.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/front.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				],
+				[
+					"primary_180",
+					"primary"
+				],
+				[
+					"flesh",
+					"flesh"
+				]
+			]
+		},
+		"sbq/breastsBack.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/back.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				],
+				[
+					"primary_180",
+					"primary"
+				],
+				[
+					"flesh",
+					"flesh"
+				]
+			]
+		},
+		"sbq/infused/breastsFront.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/front.png",
+			"remapDirectives": [
+				[
+					"primary_180"
+				],
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"flesh",
+					"flesh"
+				]
+			]
+		},
+		"sbq/infused/breastsBack.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/back.png",
+			"remapDirectives": [
+				[
+					"primary_180"
+				],
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"flesh",
+					"flesh"
+				]
+			]
+		},
+		"sbq/breastsFront_noNipples.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/front.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				],
+				[
+					"primary_180",
+					"primary"
+				],
+				[
+					"flesh",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/breastsBack_noNipples.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/back.png",
+			"remapDirectives": [
+				[
+					"primary",
+					"tertiary"
+				],
+				[
+					"primary_180",
+					"primary"
+				],
+				[
+					"flesh",
+					"tertiary"
+				]
+			]
+		},
+		"sbq/infused/breastsFront_noNipples.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/front.png",
+			"remapDirectives": [
+				[
+					"primary_180"
+				],
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"flesh",
+					"primary"
+				]
+			]
+		},
+		"sbq/infused/breastsBack_noNipples.png": {
+			"sourceImage": "/humanoid/any/sbqModules/breasts/default/back.png",
+			"remapDirectives": [
+				[
+					"primary_180"
+				],
+				[
+					"primary",
+					"primary"
+				],
+				[
+					"flesh",
+					"primary"
+				]
+			]
+		}
+	}
+}

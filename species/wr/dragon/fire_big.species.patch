@@ -3,8 +3,9 @@
 	"sbqTFAny" : true,
 	"sbqTenantData" : {
 		"colonyTagCriteria" : {
-			"hoard" : 8,
-			"valuable" : 32
+			"hoard" : 32,
+			"valuable" : 16,
+			"foundry" : 16
 		},
 		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
 		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
@@ -21,10 +22,14 @@
 			{"combat":8,"tier10":12}
 		],
 		"tenant" : {
-			"spawn": "npc", "species": "wr/dragon", "type": "sbqVoreTenant", "overrides": {},
+			"spawn": "npc", "species": "wr/dragon/fire_big", "type": "sbqVoreTenant", "overrides": {},
 			"orderFurniture" : [
-				{"name":"carbed", "count":1},
-				{"name":"jukebox", "count":1},
+				{"name":"foundrybed", "count":1},
+				{"name":"magmalamp", "count":1},
+				{"name":"foundrylight", "count":1},
+				{"name":"lavatankcascade", "count":1},
+				{"name":"lavatanklarge", "count":1},
+				{"name":"lavatanksmall", "count":1},
 				{"name":"royalthrone", "count":1},
 				{"name":"diamonddisplay", "count":1},
 				{"name":"goldenegg", "count":1},
