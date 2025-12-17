@@ -3,7 +3,8 @@
 	"sbqTFAny" : true,
 	"sbqTenantData" : {
 		"colonyTagCriteria" : {
-			"bioluminescence" : 8
+			"bioluminescence" : 8,
+			"dark" : 4
 		},
 		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
 		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
@@ -27,7 +28,9 @@
 				{"name":"glowchest", "count":1},
 				{"name":"glowbushlamp", "count":1},
 				{"name":"glowflowerlamp", "count":1},
-				{"name":"glowvinelamp", "count":1}
+				{"name":"glowvinelamp", "count":1},
+				{"name":"shadowchimes", "count":1},
+				{"name":"shadowchest", "count":1}
 			]
 		},
 		"guardTenant" : [ // merges on top of the base tenant

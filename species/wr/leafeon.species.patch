@@ -3,8 +3,8 @@
 	"sbqTFAny" : true,
 	"sbqTenantData" : {
 		"colonyTagCriteria" : {
-			"unscorched" : 8,
-			"human" : 4
+			"nature" : 8,
+			"giantflower" : 8
 		},
 		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
 		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
@@ -23,15 +23,12 @@
 		"tenant" : {
 			"spawn": "npc", "species": "wr/leafeon", "type": "sbqVoreTenant", "overrides": {},
 			"orderFurniture" : [
-				{"name":"medievalfireplace", "count":1},
-				{"name":"frontierfurnace", "count":1},
-				{"name":"scorchedcitybed", "count":1},
-				{"name":"scorchedcitychestdrawersmall", "count":1},
-				{"name":"scorchedcitytv", "count":1},
-				{"name":"scorchedcitytable", "count":1},
-				{"name":"lavalamp1", "count":1, "parameters":{"color":"red"}},
-				{"name":"lavalamp1", "count":1, "parameters":{"color":"orange"}},
-				{"name":"lavalamp1", "count":1, "parameters":{"color":"yellow"}}
+				{"name":"flowerbox", "count":1},
+				{"name":"flowerlamp", "count":1},
+				{"name":"giantflowerlamp", "count":1},
+				{"name":"giantflowertable", "count":1},
+				{"name":"giantflowerchair", "count":1},
+				{"name":"giantflowerbed", "count":1}
 			]
 		},
 		"guardTenant" : [ // merges on top of the base tenant

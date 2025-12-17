@@ -3,7 +3,8 @@
 	"sbqTFAny" : true,
 	"sbqTenantData" : {
 		"colonyTagCriteria" : {
-			"human" : 8
+			"zen" : 4,
+			"hylotlvillage" : 4
 		},
 		"guardColonyTagCriteria" : [ // merges over colonyTagCriteria for the tier of guard
 		// in vanilla there is only tiers 1-4 of guard, but since many mods extend the tiers
@@ -22,12 +23,14 @@
 		"tenant" : {
 			"spawn": "npc", "species": "espeon", "type": "sbqVoreTenant", "overrides": {},
 			"orderFurniture" : [
-				{"name":"carbed", "count":1},
-				{"name":"jukebox", "count":1},
-				{"name":"basictv", "count":1},
-				{"name":"fridge", "count":1},
-				{"name":"oven1", "count":1},
-				{"name":"basicbath", "count":1}
+				{"name":"zenrock1", "count":1},
+				{"name":"zenrock2", "count":1},
+				{"name":"zenrock3", "count":1},
+				{"name":"zenrock4", "count":1},
+				{"name":"zenrock5", "count":1},
+				{"name":"hylotllantern1", "count":1},
+				{"name":"hylotlclassictable", "count":1, "parameters":{"color":"red"}},
+				{"name":"hylotlbed2", "count":1}
 			]
 		},
 		"guardTenant" : [ // merges on top of the base tenant
